@@ -1,0 +1,9 @@
+{
+  "name": "enimeros",
+  "version": false,
+  "ambientDependencies": {
+    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts#2d448c0a3152e8871521848c5c2c61ab4e2a2cc9",
+    "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#2d448c0a3152e8871521848c5c2c61ab4e2a2cc9",
+    "assertion-error": "github:DefinitelyTyped/DefinitelyTyped/assertion-error/assertion-error.d.ts#2d448c0a3152e8871521848c5c2c61ab4e2a2cc9"
+  }
+}

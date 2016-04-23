@@ -1,0 +1,34 @@
+{
+  "name": "enimeros",
+  "version": "0.0.1",
+  "description": "Failure detection and membership in node.js",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/dschenkelman/enimeros/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dschenkelman/enimeros.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mocha-istanbul": "^0.2.0",
+    "tslint": "^3.8.0-dev.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  },
+  "scripts": {
+    "build": "tslint src/*.ts test/*.ts && tsc -p .",
+    "clean": "rm **/*.js **/*.js.map",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha && istanbul check-coverage --statement 95 --branch 95 --function 95 --lines 95",
+    "defs": "typings install",
+    "postinstall": "npm run defs",
+    "pretest": "npm run build",
+    "test": "mocha && npm run coverage"
+  },
+  "author": "Damian Schenkelman",
+  "license": "MIT"
+}
